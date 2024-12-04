@@ -1,0 +1,30 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+     <item android:id="@+id/menu_pay"
+           android:title="@string/view_basket_pay" 
+           android:showAsAction="always" />         
+ 
+     <item android:id="@+id/menu_see"
+           android:title="@string/view_basket_see" 
+           android:showAsAction="ifRoom" /> 
+  	
+     <item android:id="@+id/menu_selfcare"
+           android:title="@string/view_basket_selfcare" 
+           android:showAsAction="never" /> 
+     
+     <item android:id="@+id/menu_config"
+           android:title="@string/view_basket_config" 
+           android:showAsAction="never"/>
+     
+     <item 
+        android:id="@+id/menu_help"
+        android:icon="@drawable/ic_help"
+        android:title="@string/view_basket_help" 
+        android:showAsAction="never"/>
+     
+     <item android:id="@+id/menu_quit"
+           android:title="@string/view_basket_quit" 
+           android:showAsAction="never" />         
+     
+
+</menu>

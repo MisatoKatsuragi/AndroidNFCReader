@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.hpe.PayActivity" >
+
+
+    <ImageView
+       android:id="@+id/bg"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignParentEnd="true" 
+	   android:layout_alignParentBottom="true"    
+       android:src="@drawable/bg" 
+       android:contentDescription="@string/app_name"
+       />
+
+<!--    	
+    <TextView
+        android:id="@+id/resume_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:paddingStart="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:text="@string/resume_title"
+        android:textAppearance="?android:attr/textAppearanceMedium" />    
+  -->      
+    
+      <TextView
+        android:id="@+id/resume_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"     
+        android:layout_marginStart="30dp"
+		android:layout_marginTop="10dp"
+        android:text="@string/resume_title"
+        android:textColor="#ff01b2a9"
+        android:textStyle="bold"
+        android:textAppearance="?android:attr/textAppearanceMedium" >
+    </TextView>  
+    
+
+    <!-- ................................................... -->
+    
+    <TextView
+        android:id="@+id/resume_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/resume_title"
+        android:layout_marginStart="30dp"
+		android:layout_marginTop="20dp"
+        android:text="@string/resume_status"
+        android:textStyle="bold"
+        android:textAppearance="?android:attr/textAppearanceSmall">
+     </TextView> 
+     
+     <TextView
+        android:id="@+id/sep1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/resume_title"
+        android:layout_alignParentStart="true"
+	    android:layout_marginStart="100dp"
+	    android:layout_marginTop="20dp"
+	    android:text="@string/sep">
+    </TextView> 
+          
+    <TextView
+        android:id="@+id/resume_statusField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+	    android:lines="1"
+	    android:scrollHorizontally="false"
+        android:layout_below="@+id/resume_title"
+        android:layout_toEndOf="@+id/sep1"
+	    android:layout_marginStart="10dp"
+	    android:layout_marginTop="20dp"
+	   
+	    android:text="OK">
+    </TextView> 
+    
+    <!-- ................................................... -->
+    <TextView
+        android:id="@+id/resume_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/resume_status"
+        android:layout_marginStart="30dp"
+		android:layout_marginTop="0dp"
+        android:text="@string/resume_amount"
+        android:textStyle="bold"
+        android:textAppearance="?android:attr/textAppearanceSmall"> 
+    </TextView> 
+    
+    <TextView
+        android:id="@+id/sep2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/resume_status"
+        android:layout_alignParentStart="true"
+	    android:layout_marginStart="100dp"
+	    android:layout_marginTop="0dp"
+	    android:text="@string/sep">
+    </TextView>    
+    
+    <TextView
+         android:id="@+id/resume_amountField"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/resume_statusField"
+         android:layout_toEndOf="@+id/sep2"
+         android:layout_marginStart="10dp"
+         android:text="1.00" >
+	</TextView> 
+	
+    <TextView
+         android:id="@+id/currencyLabel"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignBaseline="@+id/resume_amountField"
+         android:layout_alignBottom="@+id/resume_amountField"
+         android:layout_toEndOf="@+id/resume_amountField"
+         android:text="@string/direct_currency"
+         android:layout_marginStart="10dp"
+         android:textAppearance="?android:attr/textAppearanceSmall"
+         android:textStyle="bold" >    
+    </TextView> 
+    <!-- ................................................... -->
+     
+  	<TextView
+        android:id="@+id/resume_card"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/resume_amount"
+        android:layout_marginStart="30dp"
+		android:layout_marginTop="0dp"
+        android:text="@string/resume_card"
+        android:textStyle="bold"
+        android:textAppearance="?android:attr/textAppearanceSmall" > 
+    </TextView>
+ 
+     <TextView
+        android:id="@+id/sep3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/resume_amount"
+        android:layout_alignParentStart="true"
+	    android:layout_marginStart="100dp"
+	    android:layout_marginTop="0dp"
+	    android:text="@string/sep">
+    </TextView>    
+    
+    <TextView
+         android:id="@+id/resume_cardField"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/resume_amount"
+         android:layout_toEndOf="@+id/sep3"
+         android:layout_marginStart="10dp"
+         android:text="51478 xx..xx 9632" >
+    </TextView> 
+     
+  
+
+	<TextView
+        android:id="@+id/resume_exp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/resume_card"
+        android:layout_marginStart="30dp"
+        android:text="@string/resume_exp"
+        android:textStyle="bold"
+        android:textAppearance="?android:attr/textAppearanceSmall" >     
+    </TextView>  
+     
+    <TextView
+        android:id="@+id/sep4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/resume_card"
+        android:layout_alignParentStart="true"
+	    android:layout_marginStart="100dp"
+	    android:layout_marginTop="0dp"
+	    android:text="@string/sep">
+    </TextView>    
+        
+    <TextView
+        android:id="@+id/resume_expField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/resume_card"
+        android:layout_toEndOf="@+id/sep4"
+        android:layout_marginStart="10dp"
+        android:text="08/15">
+    </TextView>
+
+    <View 
+        android:id="@+id/bar1"
+        android:layout_width="fill_parent" 
+        android:layout_height="1dp" 
+        android:layout_below="@+id/resume_exp" 
+        android:layout_marginLeft="10dp" 
+        android:layout_marginRight="10dp" 
+        android:layout_marginTop="20dp" 
+        android:background="#333333" />
+     
+    <!--  ========================================================================================= -->
+       
+    <TextView
+        android:id="@+id/main_label_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bar1"
+        android:layout_marginStart="30dp"
+		android:layout_marginTop="20dp"
+        android:text="@string/direct_infos"
+        android:textColor="#ff01b2a9"
+        android:textStyle="bold"
+        android:textAppearance="?android:attr/textAppearanceMedium" >
+    </TextView>
+                 
+     
+    <TextView
+        android:id="@+id/customerTelLabel"
+        android:labelFor="@+id/customerTelField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/main_label_2"
+        android:layout_marginStart="30dp"
+		android:layout_marginTop="20dp"
+        android:text="@string/direct_tel"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <EditText
+        android:id="@+id/customerTelField"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/customerTelLabel"
+        android:layout_below="@+id/main_label_2"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="0dp"
+        android:inputType="phone"
+        android:lines="1"
+        android:scrollHorizontally="true"
+        android:singleLine="true"
+        android:text="" >
+
+    </EditText>
+ 
+  
+    <TextView
+        android:id="@+id/customerEmailLabel"
+        android:labelFor="@+id/customerEmailField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/customerTelField"
+        android:layout_marginStart="30dp"
+		android:layout_marginTop="20dp"
+        android:text="@string/direct_email"
+        android:textAppearance="?android:attr/textAppearanceSmall" >
+    </TextView>
+    
+     
+    <EditText
+        android:id="@+id/customerEmailField"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/customerTelField"
+        android:layout_below="@+id/customerTelField"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="0dp"
+        android:inputType="textEmailAddress"
+        android:lines="1"
+        android:scrollHorizontally="true"
+        android:singleLine="true"
+        android:text="" >
+    </EditText>
+    
+ <!--
+      <View 
+          android:id="@+id/bar2"
+          android:layout_width="fill_parent" 
+          android:layout_height="1dp" 
+          android:layout_below="@+id/customerEmailLabel" 
+          android:layout_marginLeft="10dp" 
+          android:layout_marginRight="10dp" 
+          android:layout_marginTop="20dp" 
+          android:background="#ffffff" />
+-->     
+      
+      <!--  ========================================================================================= -->
+
+     
+<!-- Button
+          android:id="@+id/pay_sendBut"
+     
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+
+          android:layout_below="@+id/bar2"
+          android:layout_marginTop="10dp"     
+              
+          android:layout_marginLeft="10dp" 
+          android:layout_marginRight="10dp" 
+          android:background="#ff33b5e5"
+          android:cropToPadding="false"
+          android:gravity="center"
+          android:text="@string/direct_send"
+          android:textColor="#ffffffff"
+          android:textStyle="bold" />
+-->
+      
+      <LinearLayout
+          android:layout_width="fill_parent"
+          android:layout_height="150dp"
+          android:layout_alignParentBottom="true"
+          android:layout_alignParentLeft="true"
+          android:layout_alignParentRight="true"
+
+          android:background="#ff333333"
+          android:cropToPadding="false"
+          android:gravity="left" >
+
+           <ImageButton
+              android:id="@+id/send_but"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:background="#FFFF0000"
+              android:layout_marginLeft="5dp"
+              android:layout_marginTop="5dp"
+              android:src="@drawable/send_but" />
+           
+           <ImageButton
+              android:id="@+id/exit_But"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:background="#FFFF0000"
+              android:layout_marginLeft="10dp"
+              android:layout_marginTop="5dp"
+              android:src="@drawable/exit" />
+<!--  
+           <ImageButton
+               android:id="@+id/cancel_but"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:background="#FFFF0000"
+              android:layout_marginLeft="10dp"
+              android:layout_marginTop="5dp"
+               android:src="@drawable/cancel_but" />
+-->          
+      </LinearLayout>
+
+
+     <TextView
+         android:id="@+id/wordline"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+ 		 android:layout_alignParentRight="true"
+         android:layout_alignParentBottom="true"
+         android:layout_marginRight="10dp"
+         android:layout_marginBottom="5dp"
+         android:text="@string/copyrights"
+         android:textAppearance="?android:attr/textAppearanceSmall"
+         android:textColor="#999999"
+         android:textSize="8dp"
+         android:textStyle="italic" />
+
+ 
+
+</RelativeLayout>

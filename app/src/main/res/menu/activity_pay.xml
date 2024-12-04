@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+      <item android:id="@+id/menu_cancel"
+           android:title="@string/view_basket_quit" 
+           android:showAsAction="always" />         
+     
+     <item 
+        android:id="@+id/menu_help"
+        android:icon="@drawable/ic_help"
+        android:title="@string/view_basket_help" 
+        android:showAsAction="never"/>
+ 
+      <item android:id="@+id/menu_quit"
+           android:title="@string/view_basket_quit" 
+           android:showAsAction="never" />    
+
+</menu>

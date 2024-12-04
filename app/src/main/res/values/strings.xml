@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    
+    
+    <!--  Connection Fragment -->
+    <string name="copyrights" translatable="false">HPE - version 1.0.0</string>
+    <string name="sep" translatable="false">:</string>
+    <string name="none" translatable="false"></string>
+
+    
+    
+	<!--  Simple Pay Fragment -->
+    <string name="direct_title">SAISIE TRANSACTION :</string>
+    <string name="direct_amount">Montant :</string>
+	<string name="direct_infos">INFORMATIONS COMPLEMENTAIRES :</string>
+	<string name="direct_tel">Mobile :</string>
+	<string name="direct_email">Email :</string>
+	<string name="direct_merchant_ref">Libellé :</string>   	
+	<string name="direct_currency" translatable="false">Eur</string>
+	<string name="direct_send">PAYER</string>
+	<string name="direct_reset">ANNULER</string>
+	<string name="direct_scan">SCANNER</string>
+	
+	
+	<string name="tap_cancel">ANNULER</string>
+    
+    
+    <string name="resume_title">Résumé de la transaction :</string>
+    <string name="resume_amount">Montant</string>
+    <string name="resume_status">Status</string>
+    <string name="resume_card">N° Carte</string>
+    <string name="resume_exp">Exp</string>
+    
+    
+    
+    
+    
+    
+
+    <!-- Common text -->
+    <string name="separator" translatable="false">:</string>
+    <string name="noValue" translatable="false"></string>
+    <string name="yes">Oui</string>
+    <string name="no">Non</string>
+    <string name="conn_error">Problème de connexion au serveur !</string>
+    <string name="invalid_config_message">Configuration non valide ! Saissisez l\'identifiant du terminal.</string>
+    
+ 
+
+    <!-- Open activity -->
+    <string name="app_name" translatable="false">Host POS Emulation</string>
+    <string name="compagny" translatable="false">HPE</string>
+    <string name="version" translatable="false">Version 1.0.0</string>
+
+    <!-- View basket activity -->
+    <string name="basket">Panier</string>
+    <string name="amount">Montant</string>
+    <string name="items">Articles</string>
+
+    <!-- View basket activity buttons -->
+    <string name="scan">SCAN</string>
+    <string name="add"> + </string>
+    <string name="clear">EFF</string>
+    <string name="newCustomer">NVX</string>
+
+    <!-- View basket activity menu -->
+    <string name="view_basket_pay">Payer</string>
+    <string name="view_basket_see">Voir</string>
+    <string name="view_basket_selfcare">Gerer</string>
+    <string name="view_basket_config">Configurer</string>
+    <string name="view_basket_quit">Quitter</string>
+    <string name="view_basket_help">Aide</string>
+
+    <string name="action_settings">Paramètres</string>
+    <string name="action_back">Retour</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="not_supply">Non renseigné</string>
+    
+    <!--  Payment activity -->
+    <string name="view_pay_payment">Paiement :</string>
+	<string name="view_pay_cancel">Annuler</string>
+	<string name="view_pay_address">Adresses client</string>
+	<string name="view_pay_tel">Mobile  :</string>
+	<string name="view_pay_email">Email :</string>
+	<string name="view_pay_merchant_ref">Libellé :</string>
+	
+	
+    <!--  Add item activity -->
+    <string name="view_additem_title">Compléter la transaction :</string>
+    <string name="view_additem_price">Prix :</string>
+	<string name="view_additem_productdata">Votre Achat</string>
+	
+	<string name="view_additem_desc_category">Description :</string>
+	<string name="view_additem_desc_detail">Ref Commerçant :</string>
+	<string name="view_additem_cancel">Annuler</string>
+	<string name="view_additem_add">Ajouter</string>
+	<string name="additem_currency_Label">Eur</string>
+	
+	<string name="additem_prompt">Selectionnez</string>
+	<string-array name="category_arrays">
+	    <item>Divers</item>
+        <item>Livres en français</item>
+        <item>Livres anglais et étranger</item>
+        <item>Jeux et jouets</item>
+        <item>Jeux video</item>        
+    </string-array>
+	
+	<string name="view_pay_send">PAYER</string>
+	<string name="view_pay_send_description">Paiement carte</string>
+	<string name="view_pay_reset">RAZ</string>
+	<string name="view_pay_reset_description">RAZ du terminal</string>
+	
+	<!--  Checkout activity -->
+    <string name="view_checkout">Transaction :</string>
+    <string name="view_checkout_state">Status</string>
+    <string name="view_checkout_date">Date</string>
+    <string name="view_checkout_amount">Montant</string>
+    <string name="view_checkout_ref">Référence</string>
+    <string name="view_checkout_author">Code Réponse</string>
+    <string name="view_checkout_submit">OK</string>
+    <string name="view_checkout_error">ERREUR</string>
+    <string name="view_checkout_ext"> € TTC</string>
+    
+    <string name="view_checkout_started">INITIALISEE</string>
+    <string name="view_checkout_running">EN COURS</string>
+    <string name="view_checkout_validated">ACCEPTEE</string>
+    <string name="view_checkout_refused">REFUSEE</string>
+    
+    <string name="dialog_title">Paramètres</string>
+    <string name="dialog_message">Saissisez le numéro de série de votre terminal</string>
+    <string name="dialog_ok">Valider</string>
+    <string name="dialog_cancel">Annuler</string>
+    
+    
+    <string name="dialog2_title">Mot de passe</string>
+    <string name="dialog2_message">Saissisez votre mot de passe</string>
+    <string name="dialog2_ok">Valider</string>
+    <string name="dialog2_cancel">Annuler</string>
+    
+    <string name="dialog_loading">Chargement en cours</string>
+    
+    
+    <string name="view_transactions_title">Liste des transactions</string>
+	<string name="view_transactions_terminal">Terminal :</string>
+	<string name="view_transactions_data">Références</string>
+	<string name="view_transactions_amount">Détails</string>
+	<string name="view_transactions_status">Etat</string>
+	
+	
+	<string name="test_1a">Ref:001-2001236\nCard:4789xxxx03</string>
+	<string name="test_1b"><b>1.00 EUR</b>\n13/09/2013\n05h20</string>
+	<string name="test_1c">ACCEPTEE</string>	
+	
+	
+	<string name="test_2a">Ref:001-2001236\nCard:4789xxxx03</string>
+	<string name="test_2b"><b>1.00 EUR</b>\n13/09/2013\n13h17</string>
+	<string name="test_2c">ACCEPTEE</string>	
+		
+
+	
+</resources>

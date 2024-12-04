@@ -1,0 +1,27 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.hpe"
+        minSdkVersion 19
+        targetSdkVersion 33
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+    namespace 'com.hpe'
+}
+
+dependencies {
+    api files('libs/activation.jar')
+    api files('libs/additionnal.jar')
+    api files('libs/emv-api-le-1.4-jar-with-dependencies.jar')
+    api files('libs/mail.jar')
+//    api files('libs/zxing-core.jar')
+}

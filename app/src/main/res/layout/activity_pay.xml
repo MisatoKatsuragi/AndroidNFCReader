@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.hpe.PayActivity" >
+
+
+    <ImageView
+       android:id="@+id/bg"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignParentEnd="true"
+	   android:layout_alignParentBottom="true"    
+       android:src="@drawable/bg" 
+       android:contentDescription="@string/app_name"
+       />
+
+
+    	
+  	
+    <TextView
+        android:id="@+id/main_label_0"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:text="@string/direct_title"
+        android:textColor="#ff01b2a9"
+        android:textAppearance="?android:attr/textAppearanceMedium" />    
+        
+    <TextView
+        android:id="@+id/main_label_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/main_label_0"
+        android:layout_marginStart="30dp"
+		android:layout_marginTop="10dp"
+        android:text="@string/direct_amount"
+        android:textStyle="bold"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+          
+    <EditText
+        android:id="@+id/amountField"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+	    android:lines="1"
+	    android:scrollHorizontally="false"
+        android:layout_below="@+id/main_label_0"
+        android:layout_toRightOf="@+id/main_label_1"
+	    android:layout_marginLeft="10dp"
+	    android:layout_marginTop="0dp"
+	    android:inputType="numberDecimal"
+	    android:text="">
+
+        <requestFocus />
+    </EditText> 
+    
+  	<TextView
+        android:id="@+id/currencyLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/main_label_0"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/amountField"
+        android:text="@string/direct_currency"
+        android:textStyle="bold"
+        android:textAppearance="?android:attr/textAppearanceSmall" />  
+    
+    
+      <View 
+          android:id="@+id/bar1"
+          android:layout_width="fill_parent" 
+          android:layout_height="1dp" 
+          android:layout_below="@+id/main_label_1" 
+          android:layout_marginLeft="10dp" 
+          android:layout_marginRight="10dp" 
+          android:layout_marginTop="20dp" 
+          android:background="#333333" />
+      
+      <!--  ========================================================================================= -->
+      
+      <TextView
+        android:id="@+id/main_label_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bar1"
+        android:layout_marginStart="10dp"
+		android:layout_marginTop="20dp"
+        android:text="@string/direct_infos"
+        android:textColor="#ff01b2a9"
+        android:textAppearance="?android:attr/textAppearanceMedium">
+     </TextView>    
+      
+     <TextView
+        android:id="@+id/merchantRefLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/main_label_2"
+        android:layout_marginLeft="30dp"
+		android:layout_marginTop="20dp"
+        android:text="@string/direct_merchant_ref"
+        android:textAppearance="?android:attr/textAppearanceSmall">
+	 </TextView>
+     
+    <EditText
+        android:id="@+id/merchantRefField"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+	    android:lines="1"
+	    android:scrollHorizontally="true"
+        android:layout_below="@+id/main_label_2"
+        android:layout_toRightOf="@+id/merchantRefLabel"
+	    android:layout_marginLeft="10dp"
+	    android:layout_marginRight="30dp"
+	    android:layout_marginTop="0dp"
+	    android:inputType="text"
+	    android:text="" />
+
+      
+      
+    <TextView
+        android:id="@+id/customerTelLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/merchantRefLabel"
+        android:layout_marginLeft="30dp"
+		android:layout_marginTop="20dp"
+        android:text="@string/direct_tel"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+     
+    <EditText
+        android:id="@+id/customerTelField"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+	    android:lines="1"
+	    android:scrollHorizontally="true"
+        android:layout_below="@+id/merchantRefLabel"
+        android:layout_alignLeft="@+id/merchantRefField"     
+	    android:layout_marginRight="30dp"
+	    android:layout_marginTop="0dp"
+	    android:text=""
+        android:inputType="phone" >
+
+    </EditText>
+    
+    <TextView
+        android:id="@+id/customerEmailLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/customerTelLabel"
+        android:layout_marginLeft="30dp"
+		android:layout_marginTop="20dp"
+        android:text="@string/direct_email"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+    
+    <EditText
+        android:id="@+id/customerEmailField"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+	    android:lines="1"
+	    android:scrollHorizontally="true"
+        android:layout_below="@+id/customerTelLabel"
+        android:layout_alignLeft="@+id/merchantRefField"    
+	    android:layout_marginRight="30dp"
+	    android:layout_marginTop="0dp"
+	    android:text=""
+        android:inputType="textEmailAddress" />
+
+    
+      <View 
+          android:id="@+id/bar2"
+          android:layout_width="fill_parent" 
+          android:layout_height="1dp" 
+          android:layout_below="@+id/customerEmailLabel" 
+          android:layout_marginLeft="10dp" 
+          android:layout_marginRight="10dp" 
+          android:layout_marginTop="20dp" 
+          android:background="#ffffff" />
+    
+      
+      <!--  ========================================================================================= -->
+
+     
+<!-- Button
+          android:id="@+id/pay_sendBut"
+     
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+
+          android:layout_below="@+id/bar2"
+          android:layout_marginTop="10dp"     
+              
+          android:layout_marginLeft="10dp" 
+          android:layout_marginRight="10dp" 
+          android:background="#ff33b5e5"
+          android:cropToPadding="false"
+          android:gravity="center"
+          android:text="@string/direct_send"
+          android:textColor="#ffffffff"
+          android:textStyle="bold" />
+-->
+      
+      <LinearLayout
+          android:layout_width="fill_parent"
+          android:layout_height="150dp"
+          android:layout_alignParentBottom="true"
+          android:layout_alignParentLeft="true"
+          android:layout_alignParentRight="true"
+
+          android:background="#ff333333"
+          android:cropToPadding="false"
+          android:gravity="left" >
+
+           <ImageButton
+              android:id="@+id/pay_sendBut"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:background="#FFFF0000"
+              android:layout_marginLeft="5dp"
+              android:layout_marginTop="5dp"
+              android:src="@drawable/pay_but" />
+           
+           <ImageButton
+              android:id="@+id/scan_But"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:background="#FFFF0000"
+              android:layout_marginLeft="10dp"
+              android:layout_marginTop="5dp"
+              android:src="@drawable/scan_but" />
+
+           <ImageButton
+               android:id="@+id/cancel_but"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:background="#FFFF0000"
+              android:layout_marginLeft="10dp"
+              android:layout_marginTop="5dp"
+               android:src="@drawable/cancel_but_disabled" />
+          
+      </LinearLayout>
+
+
+     <TextView
+         android:id="@+id/wordline"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+ 		 android:layout_alignParentRight="true"
+         android:layout_alignParentBottom="true"
+         android:layout_marginRight="10dp"
+         android:layout_marginBottom="5dp"
+         android:text="@string/copyrights"
+         android:textAppearance="?android:attr/textAppearanceSmall"
+         android:textColor="#999999"
+         android:textSize="8dp"
+         android:textStyle="italic" />
+
+</RelativeLayout>
