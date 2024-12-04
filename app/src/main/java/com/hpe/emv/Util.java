@@ -1,7 +1,7 @@
 package com.hpe.emv;
 
 // Imports
-import java.io.UnsupportedEncodingException;
+import java.nio.charset.StandardCharsets;
 import java.util.Arrays;
 
 
@@ -25,13 +25,8 @@ public class Util {
 	}
 
 	static String toASCII(byte[] bytes){
-		try {
-			return new String(bytes, 0, bytes.length, "ASCII");
-		} catch (UnsupportedEncodingException e) {
-			e.printStackTrace();
-			return e.getMessage();
-		}
-	}
+        return new String(bytes, 0, bytes.length, StandardCharsets.US_ASCII);
+    }
 	
 	static int toInt(byte[] bytes){
 		StringBuilder stringBuilder = new StringBuilder();
