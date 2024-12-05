@@ -25,23 +25,18 @@ public class OpenActivity extends Activity {
 	
 	private static final int STOPSPLASH = 0;
 	private static final long SPLASHTIME = 4500;	
-	private Handler splashHandler = new Handler() {
+	private final Handler splashHandler = new Handler() {
 
 		@Override
 		public void handleMessage(Message msg) {
 			
 			Log.i(TAG, "handleMessage(Message msg)");
-			
-			switch (msg.what) {
-				
-				case STOPSPLASH:
 
-					//Switch from SplashScreen to Activity
-					Intent intent = new Intent(OpenActivity.this, PayActivity.class);
-					startActivity(intent);
-					OpenActivity.this.finish();
-					break;
-			}	
+            if (msg.what == STOPSPLASH) {//Switch from SplashScreen to Activity
+                Intent intent = new Intent(OpenActivity.this, PayActivity.class);
+                startActivity(intent);
+                OpenActivity.this.finish();
+            }
 			super.handleMessage(msg);
 	
 		}
@@ -60,7 +55,7 @@ public class OpenActivity extends Activity {
 		 
 		setContentView(R.layout.activity_open);
 
-		View view = (View) findViewById(android.R.id.content);
+		View view = findViewById(android.R.id.content);
 		Animation animationFadeIn = AnimationUtils.loadAnimation(this, R.anim.fadein);
 		view.startAnimation(animationFadeIn);
 		
